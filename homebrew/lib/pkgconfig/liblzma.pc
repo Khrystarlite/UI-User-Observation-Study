@@ -1,0 +1,5 @@
+XSym
+0046
+073add14a73558a0a56b24975b087665
+../../Cellar/xz/5.2.4/lib/pkgconfig/liblzma.pc
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
