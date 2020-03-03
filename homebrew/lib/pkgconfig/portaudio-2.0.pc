@@ -1,0 +1,5 @@
+XSym
+0060
+666f00c24ae59d138e3f0ba3ecc6bf99
+../../Cellar/portaudio/19.6.0/lib/pkgconfig/portaudio-2.0.pc
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
