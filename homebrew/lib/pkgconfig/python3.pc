@@ -1,5 +1,0 @@
-XSym
-0050
-e03b1286aae3a01764d4f9800118b5c7
-../../Cellar/python/3.7.1/lib/pkgconfig/python3.pc
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

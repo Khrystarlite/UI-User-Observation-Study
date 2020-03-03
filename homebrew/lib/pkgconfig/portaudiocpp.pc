@@ -1,5 +1,0 @@
-XSym
-0059
-4a7ed1731c9fa39e9edcb2d9c8be2afc
-../../Cellar/portaudio/19.6.0/lib/pkgconfig/portaudiocpp.pc
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
