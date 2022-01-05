@@ -1,0 +1,36 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "ec4adb6d58ee23eeb1870570751024c3c96d3f99df6179f79dc21b822df7e6a2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.9"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pyaudio": {
+            "hashes": [
+                "sha256:d237571fa256229fbb9e69cd0b7cb62a0ebb60af9bb43e694371b9a75e3b58b4"
+            ],
+            "path": "./deps/PyAudio-0.2.11-cp39-cp39-win_amd64.whl",
+            "version": "==0.2.11"
+        },
+        "tk": {
+            "hashes": [
+                "sha256:60bc8923d5d35f67f5c6bd93d4f0c49d2048114ec077768f959aef36d4ed97f8",
+                "sha256:703a69ff0d5ba2bd2f7440582ad10160e4a6561595d33457dc6caa79b9bf4930"
+            ],
+            "index": "pypi",
+            "version": "==0.1.0"
+        }
+    },
+    "develop": {}
+}
