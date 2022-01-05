@@ -5,10 +5,11 @@ A basic User Interface project. A user observation study was done comparing to v
 ### Setup
 
 ```
-# pipenv
+# if using pipenv
 pipenv install
 # pipenv - for exact versions in pipfile
 pipenv sync
+
 # pip - requirements
 pip install -r requirements.txt
 ```
