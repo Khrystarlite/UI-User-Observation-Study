@@ -60,7 +60,7 @@ class userInterface:
 		#
 		# ]
 
-		self.myParent = parent	# parent is qquivalent to root. The parent framework is invoked and everything is built upon it. primarily needed for keystrokes amd
+		self.myParent = parent	# parent is equivalent to root. The parent framework is invoked and everything is built upon it. primarily needed for keystrokes amd
 
 		# Construct the frames that all the different parts of the GUI will be attached to
 
