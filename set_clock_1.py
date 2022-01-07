@@ -171,7 +171,7 @@ class userInterface:
 		# self.PAD.configure(text="", background="#ffffff")
 		# self.PAD.grid(row=3,column=2,rowspan=1,columnspan=1,sticky="nsew")
 
-
+		## Dial settings for the day
 		# inner left dial element
 		self.D_LEFT= tk.Label(self.OtherFrame,width=10)
 		self.D_LEFT.configure(text="Saturday", background="#ffffff",relief="solid")
@@ -626,7 +626,7 @@ class userInterface:
 		self.button3.config(relief=tk.SUNKEN, background=self.cursor_Col)
 		self.button3.after(150, lambda: self.button3.config(relief=tk.SOLID, background="#ffffff"))
 
-
+>
 	# Converts hour integers to strings without concating AM/PM - still converts am/pm when appropriate
 	def hour_Str(self,hour_int):
 		if hour_int == 0 or hour_int == 24:
