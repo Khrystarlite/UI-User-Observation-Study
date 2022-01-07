@@ -24,6 +24,7 @@ import tkinter as tk
 # For data collection purposes
 import os
 
+
 def main():
 
 	initAudPaths()		# Initializes the global paths to the sound files
@@ -64,7 +65,7 @@ class userInterface:
 
 		# Construct the frames that all the different parts of the GUI will be attached to
 
-		# Instruction Frame
+		# Instruction Frame - displays the target time for the participant to set to.
 		self.instructFrame = tk.Frame(parent, width=500,height=500)
 		self.instructFrame.grid(row=0,column=0,padx=10,pady=0)
 
@@ -89,7 +90,7 @@ class userInterface:
 		# self.myParent.bind("<k>", self.keyPress)      # Right Button_1
 		# self.myParent.bind("<d>", self.keyPress)      # Left Button_2
 		self.myParent.bind("<f>", self.keyPress)      # Right Button_3
-		self.myParent.bind("<Key>", self.keyPress)      # Right Button_3
+		self.myParent.bind("<Key>", self.keyPress)      # Binds everyother key so that they can be logged, i think -TLC 2021
 		self.myParent.bind("<space>", self.keyPress)  # Select Button
 
 		# Utilitiy variables
@@ -98,20 +99,20 @@ class userInterface:
 		self.cursor_Col = 'yellow'	# Need to make this flashing
 		self.clock_Col = 'SteelBlue1'
 		# Clock info/ default time
-		self.day = "Sunday"		# unused for now
+		self.day = "Sunday"		
 		self.hour = 12
 		self.minute = 00
 		self.ampm = 'AM'
 		# placeholder for playing combined soundfiles
 		self.TMP_WAV = 'tmp.wav'
 
-		# Data arrays
+		# DataTime arrays
 		self.date_ARR = ["Sunday","Monday","Tuesday","Wednesday","Thursday", "Friday", "Saturday"]
 		self.date_ARR_index = 0
 		self.hour_ARR = [23,0,1]
 		self.min_ARR = [59,0,1]
 
-		# Main Menu
+		# Main Menu - sets the paramaters that define what components of the main menu looks like
 		self.MM_Label = tk.Label(self.MM_Frame,width=10)
 		self.MM_Label.configure(text="Main Menu", background=self.mm_HC, relief=tk.SUNKEN)
 		self.MM_Label.grid(row=0,column=0,rowspan=1,columnspan=1,sticky="nsew")
@@ -131,7 +132,7 @@ class userInterface:
 		self.Reset.configure(text="Reset Time", background="#ffffff", relief="solid")
 		self.Reset.grid(row=5,column=0,rowspan=1,columnspan=1,sticky="nsew")
 
-		## CLock
+		## Clock - defines how the date and time are displayed
 		self.PAD = tk.Label(self.OtherFrame,width=10)
 		self.PAD.configure(text="", background="#ffffff")
 		self.PAD.grid(row=0,column=2,rowspan=1,columnspan=1,sticky="nsew")
@@ -144,7 +145,7 @@ class userInterface:
 		self.Hour.configure(text=self.hour_Str(self.hour), background=self.clock_Col, relief="solid")
 		self.Hour.grid(row=1,column=3,rowspan=1,columnspan=1,sticky="nsew")
 
-		# Semicolon
+		# Colon for the time
 		self.SC = tk.Label(self.OtherFrame,width=10)
 		self.SC.configure(text=":", background=self.clock_Col, relief="solid")
 		self.SC.grid(row=1,column=4,rowspan=1,columnspan=1,sticky="nsew")
@@ -170,6 +171,8 @@ class userInterface:
 		# self.PAD.configure(text="", background="#ffffff")
 		# self.PAD.grid(row=3,column=2,rowspan=1,columnspan=1,sticky="nsew")
 
+
+		# inner left dial element
 		self.D_LEFT= tk.Label(self.OtherFrame,width=10)
 		self.D_LEFT.configure(text="Saturday", background="#ffffff",relief="solid")
 		self.D_LEFT.grid(row=4,column=3,rowspan=1,columnspan=1,sticky="nsew")
